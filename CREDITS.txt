@@ -2,3 +2,7 @@ Walls Sprite:
 https://ipixl.itch.io/pixel-art-112-platformer-grass-tiles
 Crystal Sprite:
 https://lunarnia.itch.io/pixel-purple-gem
+Dirt Walls:
+https://www.deviantart.com/zdogwatch/art/Dirt-Tileset-751076031
+Water Shield:
+https://opengameart.org/content/shield-effect

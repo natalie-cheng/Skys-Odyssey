@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 039b2fb47bad948228735abef46cf6c7
+guid: 3186d39916cac44e1bfc46538512972b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,589 +110,589 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_0
-      rect:
-        serializedVersion: 2
-        x: 11
-        y: 128
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2753b2e7f2364a3db071b2c2edbd4ab
-      internalID: -1155543107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_1
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 128
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f3ded765e769401687aae30a5c17ee7
-      internalID: -893055735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_2
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 128
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d3f0271cfd1421b840f453d8c290f5
-      internalID: -1229755211
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_3
-      rect:
-        serializedVersion: 2
-        x: 134
-        y: 128
-        width: 30
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 651a76fb09e744834b352ddc3c98539d
-      internalID: -1272226535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_4
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 128
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2993b4b5512ed462491288a2c73cc1e6
-      internalID: -671182649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_5
-      rect:
-        serializedVersion: 2
-        x: 218
-        y: 128
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e336116110814b0bbbb4156804dedbc
-      internalID: -975771462
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_6
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 96
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df11e10c41c734d4e90a533a0c7dadbc
-      internalID: 193739979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_7
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 96
-        width: 28
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee227dd390ae4455cbf4dbba243f553a
-      internalID: 626944545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_8
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 96
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0035a2541346c4b77821f681fdb8f488
-      internalID: -651852051
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_9
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 96
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f38abd115cf254c94a880b63347b0b47
-      internalID: -1029451567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_10
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 96
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b15e148b296ec4bfead20306a581a222
-      internalID: -71261503
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_11
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 96
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0586ae26e56844c958725015e7b25c13
-      internalID: 662013993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_12
+      name: Vorax_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 41
-        height: 32
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fd07491ca8a64c169823461e3f816dd
-      internalID: 1242698155
+      spriteID: 777006e60b3054b0c90e520722dce110
+      internalID: 802906661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_13
+      name: Vorax_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 64
-        width: 41
-        height: 32
+        x: 47
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191e3d6ad7c4b487db7b74f328e32145
-      internalID: -1549679621
+      spriteID: 229a8fd5adcbd43efb97fdbfc8d7bbc6
+      internalID: -1950866721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_14
+      name: Vorax_2
       rect:
         serializedVersion: 2
-        x: 82
-        y: 64
-        width: 41
-        height: 32
+        x: 94
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b2e08a9fb29746788d623f40674d303
-      internalID: -1434785275
+      spriteID: 4c7c75e2f7aa847b586fc27999b47d6e
+      internalID: -2047437029
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_15
+      name: Vorax_3
       rect:
         serializedVersion: 2
-        x: 123
-        y: 64
-        width: 41
-        height: 32
+        x: 141
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77cb9cd87a8b647c9b6e0935b5c1f9d6
-      internalID: -450932710
+      spriteID: 7d80351ae194f44949a77c5cc92764ae
+      internalID: -286928707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_16
+      name: Vorax_4
       rect:
         serializedVersion: 2
-        x: 164
-        y: 64
-        width: 41
-        height: 32
+        x: 188
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32d9a0544dd2542bbbde94f627575c39
-      internalID: 536064174
+      spriteID: 6f2f12008709a4b8e941480623177182
+      internalID: 867357602
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_17
+      name: Vorax_5
       rect:
         serializedVersion: 2
-        x: 205
-        y: 64
-        width: 41
-        height: 32
+        x: 235
+        y: 172
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b6bf9eb8625d4073bfbf88ebfc2d165
-      internalID: 547945247
+      spriteID: 291dafb02f75f492995ebe9d946f2eb1
+      internalID: -1315494044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60f9799d1233a430ea7591730c8e8b78
-      internalID: 546290281
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_19
-      rect:
-        serializedVersion: 2
-        x: 41
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e90fd25de27c4491a09eb3c93b0e7ae
-      internalID: -582451254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_20
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4542e8576d354fb1b1c6ebf12ea02af
-      internalID: 2036633137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_21
-      rect:
-        serializedVersion: 2
-        x: 123
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab30fcdbffe54463ea7b884cae32e7ce
-      internalID: -920604367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_22
-      rect:
-        serializedVersion: 2
-        x: 164
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48e81502128fa47a880a70e29229cbac
-      internalID: 898416748
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_23
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 32
-        width: 41
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c70e328215704b89a3c9be786a5cd8b
-      internalID: 980186469
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_24
+      name: Vorax_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 41
-        height: 32
+        y: 129
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead07000bdade4d0b997a512956f4e14
-      internalID: 1920802643
+      spriteID: 514e2d900e49149968e7821cc50fb904
+      internalID: -1904989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_25
+      name: Vorax_7
       rect:
         serializedVersion: 2
-        x: 41
-        y: 0
-        width: 41
-        height: 32
+        x: 47
+        y: 129
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5683693dc122d40bfb3bb9c5da0055d1
-      internalID: -1978043965
+      spriteID: 3b7283dd9817241f7b5da9239af49448
+      internalID: -442462636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_26
+      name: Vorax_8
       rect:
         serializedVersion: 2
-        x: 82
-        y: 0
-        width: 41
-        height: 32
+        x: 94
+        y: 129
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 082c3f45b41c0493ab7cb34dcc8c1434
-      internalID: -347841091
+      spriteID: 524b2d314968d4b3183883aae1bb9a33
+      internalID: -1081390674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_27
+      name: Vorax_9
       rect:
         serializedVersion: 2
-        x: 123
-        y: 0
-        width: 41
-        height: 32
+        x: 141
+        y: 129
+        width: 47
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30b166c8a624943f5b9dfcf6f2aaf02e
-      internalID: 1809649539
+      spriteID: 22af6645384c24d64b762bf159782a6e
+      internalID: -234999160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_10
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 129
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3584f75688d4a49b600e15e47e234a
+      internalID: -239105201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_11
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 129
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8a886db3d2b4a7ab8b4aee59a30384
+      internalID: -1395596225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc5e722b0c6e44c09a97feae87b27db
+      internalID: -582086634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d234a96ff1d24ee7b3ad9940bf339cf
+      internalID: 2067517169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e57b7d6685d44cc895c9ddbdf995e2
+      internalID: -241847094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7ae9a7695ef4b6ebf57a5b07aa5346
+      internalID: 1986478084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_16
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b767a1c9f3394b77a6f59968cfe786d
+      internalID: -1962345910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_17
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 86
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb16909f418254edf9939875fd1a0644
+      internalID: 1848627108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efd96fa77e534543b5e4f773bf8f835
+      internalID: -1753320816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_19
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad67de7e2efd4ce48c5f290d93a73dd
+      internalID: 1691515846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_20
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6061f12a616514a5192aa1fc74c6a275
+      internalID: 322717714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_21
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0fc670cd5894a07869f9f9e3960db4
+      internalID: -1315779421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_22
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902ef9930817c40c5b77cdff0b1260b4
+      internalID: -1228963260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_23
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 43
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66805fec01e84734bb6e8dd8fba6aee
+      internalID: 18210114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90b8cd50f7a0450697d36872a39ebf9
+      internalID: 346703699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_25
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd4f0ee0f87546329acb08a66411267
+      internalID: 454185705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_26
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 0
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ceba4a759ab4a0dbca1a38cd8dde16
+      internalID: 1380816746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorax_27
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 47
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7722a6010b88847b5ba38970cc1f24ff
+      internalID: 1025209742
       vertices: []
       indices: 
       edges: []
@@ -708,34 +708,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water_0: -1155543107
-      Water_1: -893055735
-      Water_10: -71261503
-      Water_11: 662013993
-      Water_12: 1242698155
-      Water_13: -1549679621
-      Water_14: -1434785275
-      Water_15: -450932710
-      Water_16: 536064174
-      Water_17: 547945247
-      Water_18: 546290281
-      Water_19: -582451254
-      Water_2: -1229755211
-      Water_20: 2036633137
-      Water_21: -920604367
-      Water_22: 898416748
-      Water_23: 980186469
-      Water_24: 1920802643
-      Water_25: -1978043965
-      Water_26: -347841091
-      Water_27: 1809649539
-      Water_3: -1272226535
-      Water_4: -671182649
-      Water_5: -975771462
-      Water_6: 193739979
-      Water_7: 626944545
-      Water_8: -651852051
-      Water_9: -1029451567
+      Vorax_0: 802906661
+      Vorax_1: -1950866721
+      Vorax_10: -239105201
+      Vorax_11: -1395596225
+      Vorax_12: -582086634
+      Vorax_13: 2067517169
+      Vorax_14: -241847094
+      Vorax_15: 1986478084
+      Vorax_16: -1962345910
+      Vorax_17: 1848627108
+      Vorax_18: -1753320816
+      Vorax_19: 1691515846
+      Vorax_2: -2047437029
+      Vorax_20: 322717714
+      Vorax_21: -1315779421
+      Vorax_22: -1228963260
+      Vorax_23: 18210114
+      Vorax_24: 346703699
+      Vorax_25: 454185705
+      Vorax_26: 1380816746
+      Vorax_27: 1025209742
+      Vorax_3: -286928707
+      Vorax_4: 867357602
+      Vorax_5: -1315494044
+      Vorax_6: -1904989
+      Vorax_7: -442462636
+      Vorax_8: -1081390674
+      Vorax_9: -234999160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

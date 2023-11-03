@@ -7,7 +7,7 @@ public class SkySprite : MonoBehaviour
     // sprite speed
     public float speed = 5;
     // threshhold for double jumping
-    public float velThreshhold = 0.5f;
+    public float velThreshhold = 0.01f;
 
     // the sprite states and animations
     public Sprite fireSprite;
@@ -17,17 +17,28 @@ public class SkySprite : MonoBehaviour
     public RuntimeAnimatorController waterAnimate;
     public RuntimeAnimatorController airAnimate;
     // how often player can switch sprites
-    private float spriteDelay = 0.5f;
+    private float spriteDelay = 0.3f;
     // 0 is fire, 1 is water, 2 is air
     private float spriteState = 0;
 
+    // water shield
+    public static bool shielded = false;
+    public GameObject shieldPrefab;
+    private GameObject waterShield;
+
+    // fireball
+    public GameObject ballPrefab;
+    private float ballDelay = 0.25f;
+
     // time tracker
-    private float currentTime;
+    private float spriteTime;
+    private float abilityTime;
 
     // sprite components
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    //private Transform player;
 
     // call start
     private void Start()
@@ -36,8 +47,37 @@ public class SkySprite : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        //transform = GetComponent<Transform>();
+
         // get current time
-        currentTime = Time.time;
+        spriteTime = Time.time;
+        abilityTime = Time.time;
+    }
+
+    // frame update
+    private void Update()
+    {
+        // change state of sprite if necessary
+        // implement a sprite switch cooldown
+        if (Input.GetButton("Switch") && (Time.time - spriteTime > spriteDelay))
+        {
+            ChangeSprite();
+            spriteTime = Time.time;
+        }
+        // use ability
+        if (Input.GetButton("Fire"))
+        {
+            UseAbility();
+        }
+        // destroy shield if necessary
+        if (spriteState != 1 || Input.GetButtonUp("Fire"))
+        {
+            // destroy the shield
+            if (waterShield != null)
+            {
+                Destroy(waterShield);
+            }
+        }
     }
 
     // physics update
@@ -45,13 +85,6 @@ public class SkySprite : MonoBehaviour
     {
         // move the sprite
         Move();
-        // change state of sprite if necessary
-        // implement a switch cooldown
-        if (Input.GetButton("Switch") && (Time.time-currentTime>spriteDelay))
-        {
-            ChangeSprite();
-            currentTime = Time.time;
-        }
     }
 
     private void Move()
@@ -59,9 +92,11 @@ public class SkySprite : MonoBehaviour
         // horizontal input axis
         float horizontal = Input.GetAxis("Horizontal");
 
-        // allow for double jumps when velocity is less than threshhold
-        // also can only jump if it's the air sprite
-        if (Input.GetButton("Vertical") && Mathf.Abs(rb.velocity.y) < velThreshhold && spriteState == 2)
+        // allow double jumps only if it's the air sprite
+            // infinite double jumps?
+        // other sprites are only allowed single jumps
+        //if (Input.GetButton("Vertical") && Mathf.Abs(rb.velocity.y) < velThreshhold && (spriteState == 2 || Mathf.Abs(rb.velocity.y) < 0.01f))
+        if (Input.GetButton("Vertical") && (spriteState == 2 || Mathf.Abs(rb.velocity.y) < velThreshhold))
         {
             rb.velocity = new Vector2(horizontal * speed, speed);
         }
@@ -77,6 +112,32 @@ public class SkySprite : MonoBehaviour
         else if (rb.velocity.x < 0)
         {
             spriteRenderer.flipX = false;
+        }
+    }
+
+    private void UseAbility()
+    {
+        // fire ability - shoot
+        if (spriteState == 0 && ((Time.time - abilityTime) > ballDelay))
+        {
+            // shoot
+            // instantiate ball
+            GameObject ball = Instantiate(ballPrefab, transform.position, transform.rotation);
+
+            // ability time cooldown
+            abilityTime = Time.time;
+        }
+        // water ability - shield
+        else if (spriteState == 1 && waterShield == null)
+        {
+            //shield
+            waterShield = Instantiate(shieldPrefab, transform.position, Quaternion.identity);
+        }
+        // air ability - jump/double jump
+        else if (spriteState == 2)
+        {
+            // jump
+            rb.velocity = new Vector2(rb.velocity.x, speed);
         }
     }
 
