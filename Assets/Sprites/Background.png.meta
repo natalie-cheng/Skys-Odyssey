@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e22bac6a229d8424b8ca75626401bb08
+guid: 47c280f2745ef4e4db76e554d3db34f2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DirtWall_0
+      name: Background_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 260
-        width: 184
-        height: 196
+        x: 3
+        y: 285
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae9c102809a94e16982e70940c352b4
-      internalID: 1382299021
+      spriteID: 677916296a1504c72b738112234dd29f
+      internalID: -740136848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_1
+      name: Background_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 387
-        width: 191
-        height: 69
+        x: 573
+        y: 285
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9a09deed84145ce96084d8cd36a9c2
-      internalID: -1340787508
+      spriteID: cfed715ac6a5749a4afb872e41c88a86
+      internalID: -245305952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_2
+      name: Background_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 136
+        x: 1143
+        y: 285
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 519b1773dbc7e4e72a7ed570dac6bb33
-      internalID: 555075499
+      spriteID: 68dc6e4e491474fa28204e674d9f7134
+      internalID: 1240652548
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_3
+      name: Background_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 324
-        width: 194
-        height: 61
+        x: 1714
+        y: 285
+        width: 563
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e2c173e6586540cd9ea5db0a232166a
-      internalID: 1526165976
+      spriteID: bcf982f3c62ab4bb19a207ff30f93d1b
+      internalID: 1445734749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_4
+      name: Background_4
       rect:
         serializedVersion: 2
-        x: 192
-        y: 265
-        width: 64
-        height: 59
+        x: 2283
+        y: 285
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88a25f00f028e4f2987148bb69777ed3
-      internalID: 332668060
+      spriteID: 3faec7a5e7d294e99bd6a5567db97437
+      internalID: 1149521259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_5
+      name: Background_5
       rect:
         serializedVersion: 2
-        x: 192
-        y: 192
-        width: 101
-        height: 73
+        x: 3
+        y: 3
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8fcf4bd33409b4925a183998d875f4f7
-      internalID: -571774849
+      spriteID: 8c6d1e8a7ed8846ceaf611a03d338a64
+      internalID: 1624724122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_10
+      name: Background_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 65
+        x: 573
+        y: 3
+        width: 563
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0872acea6254bfdb9b3ca34b5290c2
-      internalID: 748051008
+      spriteID: a33c113b11cfc48e5a350f672cfb974b
+      internalID: 1244533240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_7
+      name: Background_7
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 101
+        x: 1143
+        y: 3
+        width: 564
+        height: 276
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,113 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa7dfa4d3dfd04425aee4641e9a3f31e
-      internalID: -1148539825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_8
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 63
-        width: 64
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7542c3672ea0b4a158c4684cbeeaa029
-      internalID: 1793713243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_9
-      rect:
-        serializedVersion: 2
-        x: 321
-        y: 0
-        width: 64
-        height: 136
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0448892917ca644a2b115c5dfa426e03
-      internalID: 42974508
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_6
-      rect:
-        serializedVersion: 2
-        x: 293
-        y: 192
-        width: 91
-        height: 73
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5176d026b31b746eda099dbf4ffa87b2
-      internalID: 1736938423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_11
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 265
-        width: 65
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2c6b0e4d849b406ab5f1b6f3f5b3b73
-      internalID: 1823821416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_12
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 64
-        height: 264
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5afd5736ec606498fb23eecb7318a441
-      internalID: 109458843
+      spriteID: 08a23ab2df5f2487c9a135509b47adf6
+      internalID: 1415511992
       vertices: []
       indices: 
       edges: []
@@ -393,19 +288,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DirtWall_0: 1382299021
-      DirtWall_1: -1340787508
-      DirtWall_10: 748051008
-      DirtWall_11: 1823821416
-      DirtWall_12: 109458843
-      DirtWall_2: 555075499
-      DirtWall_3: 1526165976
-      DirtWall_4: 332668060
-      DirtWall_5: -571774849
-      DirtWall_6: 1736938423
-      DirtWall_7: -1148539825
-      DirtWall_8: 1793713243
-      DirtWall_9: 42974508
+      Background_0: -740136848
+      Background_1: -245305952
+      Background_2: 1240652548
+      Background_3: 1445734749
+      Background_4: 1149521259
+      Background_5: 1624724122
+      Background_6: 1244533240
+      Background_7: 1415511992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

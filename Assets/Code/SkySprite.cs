@@ -39,6 +39,7 @@ public class SkySprite : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     //private Transform player;
+    public static float health = 100;
 
     // call start
     private void Start()
@@ -175,9 +176,8 @@ public class SkySprite : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (spriteState != 1)
-        {
-
-        }
+        // if it collides with a vorax shot
+        // if it collides with a vorax
+        // if it collides with a crystal
     }
 }

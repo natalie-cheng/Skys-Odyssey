@@ -14,7 +14,7 @@ public class Fireball : MonoBehaviour
 
     // set the time and lifespan of the fireball
     private float currentTime;
-    private float lifespan = 2.5f;
+    public float lifespan = 1f;
 
     // call start on a new fireball
     private void Start()
