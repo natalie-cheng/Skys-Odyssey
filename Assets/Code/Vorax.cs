@@ -13,7 +13,7 @@ public class Vorax : MonoBehaviour
     public float radius = 11;
 
     // vorax shot time tracker
-    private float shotDelay = 5;
+    private float shotDelay = 3;
     private float currentTime;
     // vorax shot
     public GameObject shotPrefab;

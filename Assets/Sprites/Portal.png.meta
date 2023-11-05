@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e22bac6a229d8424b8ca75626401bb08
+guid: 77ffa1e9a8bd248608bc13b95d8070ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,337 +110,400 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DirtWall_0
+      name: Portal_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 260
-        width: 184
-        height: 196
+        x: 0
+        y: 1980
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bae9c102809a94e16982e70940c352b4
-      internalID: 1382299021
+      spriteID: 813c23d82d33049fa8e3324afedec0b4
+      internalID: 494634407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_1
+      name: Portal_1
       rect:
         serializedVersion: 2
-        x: 192
-        y: 387
-        width: 191
-        height: 69
+        x: 500
+        y: 1980
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b9a09deed84145ce96084d8cd36a9c2
-      internalID: -1340787508
+      spriteID: dfeb8c29a5f7a4705b32ec75a72ef128
+      internalID: -850831472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_2
+      name: Portal_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1980
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32c36fd7756c45f78a340d2e364524d
+      internalID: -157792538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1980
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b630d98f42d642b8aa11b299119a8b9
+      internalID: 1134727102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1980
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c7007e7e6594dea8b008d454b50320
+      internalID: 1367714522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1320
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67122c891a304e3fad9fe89fbbfaa9e
+      internalID: 248070409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1320
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009982d29fb2947ca8ac04ae2f77d0ea
+      internalID: -548155759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1320
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd83fb39a185547ec80d20ecbb1faaf5
+      internalID: 455570910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1320
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f253664829cf24daa85fa2e2e31340bf
+      internalID: 78048757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1320
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8822b7238e9f84295b6ee4e6596ef620
+      internalID: -1841191644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 660
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482273f5ce8c3480c8d3b42f0c92cf52
+      internalID: -1335605084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 660
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fae765c532cf48f58058174ed733053
+      internalID: 997090716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 660
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e047b3dc2195146b4bd51102c2ab95ef
+      internalID: -110102452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 660
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e63418fa3cf4ac69e9f3415c192179
+      internalID: -1911848740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 660
+        width: 500
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b2fddf9a9c741d6bbbbff790932185
+      internalID: 1298954527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Portal_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 136
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 519b1773dbc7e4e72a7ed570dac6bb33
-      internalID: 555075499
+      spriteID: 0bf717bd3400b46d88393a22861d8d69
+      internalID: 623362683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_3
+      name: Portal_16
       rect:
         serializedVersion: 2
-        x: 192
-        y: 324
-        width: 194
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9e2c173e6586540cd9ea5db0a232166a
-      internalID: 1526165976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_4
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 265
-        width: 64
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88a25f00f028e4f2987148bb69777ed3
-      internalID: 332668060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_5
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 192
-        width: 101
-        height: 73
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8fcf4bd33409b4925a183998d875f4f7
-      internalID: -571774849
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_10
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 65
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb0872acea6254bfdb9b3ca34b5290c2
-      internalID: 748051008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_7
-      rect:
-        serializedVersion: 2
-        x: 128
+        x: 500
         y: 0
-        width: 128
-        height: 101
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa7dfa4d3dfd04425aee4641e9a3f31e
-      internalID: -1148539825
+      spriteID: b177b51c55c2a48ffa03e7352ac992a6
+      internalID: -298897685
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_8
+      name: Portal_17
       rect:
         serializedVersion: 2
-        x: 256
-        y: 63
-        width: 64
-        height: 75
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7542c3672ea0b4a158c4684cbeeaa029
-      internalID: 1793713243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_9
-      rect:
-        serializedVersion: 2
-        x: 321
+        x: 1000
         y: 0
-        width: 64
-        height: 136
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0448892917ca644a2b115c5dfa426e03
-      internalID: 42974508
+      spriteID: 3c3b46d18c8c2452c9fde80be9e283e6
+      internalID: 463923437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DirtWall_6
+      name: Portal_18
       rect:
         serializedVersion: 2
-        x: 293
-        y: 192
-        width: 91
-        height: 73
+        x: 1500
+        y: 0
+        width: 500
+        height: 660
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5176d026b31b746eda099dbf4ffa87b2
-      internalID: 1736938423
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_11
-      rect:
-        serializedVersion: 2
-        x: 319
-        y: 265
-        width: 65
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2c6b0e4d849b406ab5f1b6f3f5b3b73
-      internalID: 1823821416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_12
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 192
-        width: 64
-        height: 264
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5afd5736ec606498fb23eecb7318a441
-      internalID: 109458843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_13
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 263
-        width: 64
-        height: 193
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7605555d72fce4b66bf61bf48a4a8216
-      internalID: 251172154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_14
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 388
-        width: 64
-        height: 68
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d73e755efcbb34560887afb4eabb4bd6
-      internalID: 2027305384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DirtWall_15
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 260
-        width: 184
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3673e60160f04036b7fc3403017f8c3
-      internalID: -130128043
+      spriteID: 9dc68a926ba004abcb6bc761d7df3540
+      internalID: 1951630674
       vertices: []
       indices: 
       edges: []
@@ -456,22 +519,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      DirtWall_0: 1382299021
-      DirtWall_1: -1340787508
-      DirtWall_10: 748051008
-      DirtWall_11: 1823821416
-      DirtWall_12: 109458843
-      DirtWall_13: 251172154
-      DirtWall_14: 2027305384
-      DirtWall_15: -130128043
-      DirtWall_2: 555075499
-      DirtWall_3: 1526165976
-      DirtWall_4: 332668060
-      DirtWall_5: -571774849
-      DirtWall_6: 1736938423
-      DirtWall_7: -1148539825
-      DirtWall_8: 1793713243
-      DirtWall_9: 42974508
+      Portal_0: 494634407
+      Portal_1: -850831472
+      Portal_10: -1335605084
+      Portal_11: 997090716
+      Portal_12: -110102452
+      Portal_13: -1911848740
+      Portal_14: 1298954527
+      Portal_15: 623362683
+      Portal_16: -298897685
+      Portal_17: 463923437
+      Portal_18: 1951630674
+      Portal_2: -157792538
+      Portal_3: 1134727102
+      Portal_4: 1367714522
+      Portal_5: 248070409
+      Portal_6: -548155759
+      Portal_7: 455570910
+      Portal_8: 78048757
+      Portal_9: -1841191644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

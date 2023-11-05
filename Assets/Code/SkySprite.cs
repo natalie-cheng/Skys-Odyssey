@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkySprite : MonoBehaviour
 {
     // sprite speed
-    public float speed = 5;
+    public float speed = 3;
     // threshhold for double jumping
     public float velThreshhold = 0.01f;
 
@@ -18,7 +18,7 @@ public class SkySprite : MonoBehaviour
     public RuntimeAnimatorController airAnimate;
     // how often player can switch sprites
     private float spriteDelay = 0.3f;
-    // 0 is fire, 1 is water, 2 is air
+    // 0 is fire, 1 is air, 2 is water
     private float spriteState = 0;
 
     // water shield
@@ -71,7 +71,7 @@ public class SkySprite : MonoBehaviour
             UseAbility();
         }
         // destroy shield if necessary
-        if (spriteState != 1 || Input.GetButtonUp("Fire"))
+        if (spriteState != 2 || Input.GetButtonUp("Fire"))
         {
             // destroy the shield
             if (waterShield != null)
@@ -97,7 +97,7 @@ public class SkySprite : MonoBehaviour
             // infinite double jumps?
         // other sprites are only allowed single jumps
         //if (Input.GetButton("Vertical") && Mathf.Abs(rb.velocity.y) < velThreshhold && (spriteState == 2 || Mathf.Abs(rb.velocity.y) < 0.01f))
-        if (Input.GetButton("Vertical") && (spriteState == 2 || Mathf.Abs(rb.velocity.y) < velThreshhold))
+        if (Input.GetButton("Vertical") && (spriteState == 1 || Mathf.Abs(rb.velocity.y) < velThreshhold))
         {
             rb.velocity = new Vector2(horizontal * speed, speed);
         }
@@ -128,18 +128,19 @@ public class SkySprite : MonoBehaviour
             // ability time cooldown
             abilityTime = Time.time;
         }
-        // water ability - shield
-        else if (spriteState == 1 && waterShield == null)
-        {
-            //shield
-            waterShield = Instantiate(shieldPrefab, transform.position, Quaternion.identity);
-        }
         // air ability - jump/double jump
-        else if (spriteState == 2)
+        else if (spriteState == 1)
         {
             // jump
             rb.velocity = new Vector2(rb.velocity.x, speed);
         }
+        // water ability - shield
+        else if (spriteState == 2 && waterShield == null)
+        {
+            //shield
+            waterShield = Instantiate(shieldPrefab, transform.position, Quaternion.identity);
+        }
+        
     }
 
     private void ChangeSprite()
@@ -160,17 +161,17 @@ public class SkySprite : MonoBehaviour
             spriteRenderer.sprite = fireSprite;
             animator.runtimeAnimatorController = fireAnimate;
         }
-        // if it's water sprite
-        else if (spriteState == 1)
-        {
-            spriteRenderer.sprite = waterSprite;
-            animator.runtimeAnimatorController = waterAnimate;
-        }
         // if it's air sprite
-        else if (spriteState == 2)
+        else if (spriteState == 1)
         {
             spriteRenderer.sprite = airSprite;
             animator.runtimeAnimatorController = airAnimate;
+        }
+        // if it's water sprite
+        else if (spriteState == 2)
+        {
+            spriteRenderer.sprite = waterSprite;
+            animator.runtimeAnimatorController = waterAnimate;
         }
     }
 

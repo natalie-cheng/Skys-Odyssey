@@ -6,11 +6,11 @@ public class VoraxShot : MonoBehaviour
 {
     // set the time and lifespan of the shot
     private float currentTime;
-    public float lifespan = 2.5f;
+    public float lifespan = 4;
 
     // shot vars
     private Rigidbody2D rb;
-    public float shotSpeed = 8;
+    public float shotSpeed = 10;
 
     // player position and direction
     private Transform player;
