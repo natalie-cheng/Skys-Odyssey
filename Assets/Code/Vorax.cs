@@ -9,8 +9,11 @@ public class Vorax : MonoBehaviour
 
     // vorax vars
     private Rigidbody2D rb;
-    // range of vorax
-    public float radius = 11;
+    private SpriteRenderer spriteRenderer;
+    public float radius = 11; // range of vorax
+    private float health = 3;
+    private Vector3 voraxColor;
+    private float opacity = 1;
 
     // vorax shot time tracker
     private float shotDelay = 3;
@@ -27,7 +30,9 @@ public class Vorax : MonoBehaviour
         // store the player, vorax vars, and current time
         player = FindObjectOfType<SkySprite>().transform;
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         currentTime = Time.time-shotDelay;
+        voraxColor = new Vector3(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b);
     }
 
     // frame update
@@ -37,6 +42,10 @@ public class Vorax : MonoBehaviour
         if (WithinRange())
         {
             Shoot();
+        }
+        if (health <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -70,5 +79,12 @@ public class Vorax : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // if it collides with fireball
+        if (collision.collider.name.Contains("Fireball"))
+        {
+            Debug.Log("Vorax loses health");
+            health--;
+            opacity -= 0.15f;
+            spriteRenderer.color = new Color(voraxColor.x, voraxColor.y, voraxColor.z, opacity);
+        }
     }
 }

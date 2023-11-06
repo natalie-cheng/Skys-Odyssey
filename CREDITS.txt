@@ -8,3 +8,5 @@ Water Shield:
 https://opengameart.org/content/shield-effect
 Background:
 https://www.pinterest.com/pin/428193877042769398/
+Health Bar:
+https://www.seekpng.com/ipng/u2q8y3i1t4q8t4w7_health-bar-health-bar-sprite-2d/

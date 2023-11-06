@@ -34,12 +34,18 @@ public class SkySprite : MonoBehaviour
     private float spriteTime;
     private float abilityTime;
 
-    // sprite components
+    // sprite vars
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     //private Transform player;
+
+    // static vars
     public static float health = 100;
+
+    // vorax damage
+    public float shotDamage = 10;
+    public float voraxDamage = 20;
 
     // call start
     private void Start()
@@ -177,8 +183,24 @@ public class SkySprite : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // if it collides with a vorax shot
-        // if it collides with a vorax
-        // if it collides with a crystal
+        // if it collides with a vorax shot, deduct health
+        if (collision.collider.name.Contains("VoraxShot"))
+        {
+            health -= shotDamage;
+            UI.ChangeHealth(shotDamage);
+        }
+
+        // if it collides with a vorax, deduct health
+        else if (collision.collider.name.Contains("Vorax"))
+        {
+            health -= voraxDamage;
+            UI.ChangeHealth(voraxDamage);
+        }
+
+        // if it collides with a crystal, play sfx
+        else if (collision.collider.name.Contains("Crystal"))
+        {
+            UI.IncreaseScore();
+        }
     }
 }
