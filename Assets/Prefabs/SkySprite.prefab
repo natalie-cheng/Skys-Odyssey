@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7838349222705697101}
   - component: {fileID: 7540217731299042082}
   - component: {fileID: 9004420277231491362}
-  - component: {fileID: 3006405103974855909}
+  - component: {fileID: 7855145977689012955}
   m_Layer: 6
   m_Name: SkySprite
   m_TagString: Untagged
@@ -124,13 +124,18 @@ MonoBehaviour:
   speed: 3
   velThreshhold: 0.01
   fireSprite: {fileID: -174947428, guid: 7570139d3dd924778ad4910cc1f30baf, type: 3}
-  waterSprite: {fileID: -1155543107, guid: 039b2fb47bad948228735abef46cf6c7, type: 3}
-  airSprite: {fileID: 2094373484, guid: 1f5fc08cf1991434284dbe4f0f132e57, type: 3}
   fireAnimate: {fileID: 9100000, guid: e34434c6ae49545cda522cceb1db050c, type: 2}
+  waterSprite: {fileID: -1155543107, guid: 039b2fb47bad948228735abef46cf6c7, type: 3}
   waterAnimate: {fileID: 9100000, guid: 13515883fb5d4440a9686bba8b3a6414, type: 2}
+  airSprite: {fileID: 2094373484, guid: 1f5fc08cf1991434284dbe4f0f132e57, type: 3}
   airAnimate: {fileID: 9100000, guid: f1098bcf3b68346a3903617507927194, type: 2}
   shieldPrefab: {fileID: 1041679433605112221, guid: 397e4b07e11b6415e99aac68a112578c, type: 3}
   ballPrefab: {fileID: 6843791958640861875, guid: 532efdf1e9af348df8d62e524d6a7242, type: 3}
+  ballSpeed: 5
+  numBalls: 8
+  angleIncrement: 0
+  shotDamage: 10
+  voraxDamage: 20
 --- !u!50 &9004420277231491362
 Rigidbody2D:
   serializedVersion: 4
@@ -158,8 +163,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &3006405103974855909
-PolygonCollider2D:
+--- !u!58 &7855145977689012955
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -180,7 +185,7 @@ PolygonCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 511
+    m_Bits: 4294967295
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -190,35 +195,6 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.62, y: 0.43}
-    newSize: {x: 0.62, y: 0.43}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.07, y: 0.13499999}
-      - {x: -0.14, y: 0.044999998}
-      - {x: -0.14, y: -0.095}
-      - {x: -0.06, y: -0.175}
-      - {x: 0.04, y: -0.175}
-      - {x: 0.11, y: -0.16499999}
-      - {x: 0.16, y: -0.145}
-      - {x: 0.16, y: 0.095}
-      - {x: 0.14, y: 0.13499999}
-    - - {x: 0.01, y: 0.114999995}
-      - {x: 0.04, y: 0.125}
-      - {x: 0.04, y: 0.155}
-      - {x: 0.01, y: 0.16499999}
-      - {x: -0.01, y: 0.145}
-    - - {x: 0.099999994, y: 0.114999995}
-      - {x: 0.13, y: 0.125}
-      - {x: 0.13, y: 0.155}
-      - {x: 0.099999994, y: 0.16499999}
-      - {x: 0.08, y: 0.145}
-  m_UseDelaunayMesh: 0
+  m_Offset: {x: -0.01, y: -0.03}
+  serializedVersion: 2
+  m_Radius: 0.14

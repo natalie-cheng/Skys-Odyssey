@@ -9,26 +9,39 @@ public class SkySprite : MonoBehaviour
     // threshhold for double jumping
     public float velThreshhold = 0.01f;
 
-    // the sprite states and animations
+    // fire state vars
     public Sprite fireSprite;
-    public Sprite waterSprite;
-    public Sprite airSprite;
     public RuntimeAnimatorController fireAnimate;
+    private float fireRadius = 0.14f;
+    private Vector2 fireOffset = new Vector2(-0.01f, -0.03f);
+
+    // water state vars
+    public Sprite waterSprite;
     public RuntimeAnimatorController waterAnimate;
+    private float waterRadius = 0.12f;
+    private Vector2 waterOffset = new Vector2(0, 0.02f);
+
+    // air state vars
+    public Sprite airSprite;
     public RuntimeAnimatorController airAnimate;
+    private float airRadius = 0.11f;
+    private Vector2 airOffset = new Vector2(0, -0.03f);
+
     // how often player can switch sprites
     private float spriteDelay = 0.3f;
     // 0 is fire, 1 is air, 2 is water
     private float spriteState = 0;
 
     // water shield
-    public static bool shielded = false;
     public GameObject shieldPrefab;
     private GameObject waterShield;
 
     // fireball
     public GameObject ballPrefab;
     private float ballDelay = 0.25f;
+    public float ballSpeed = 5;
+    public float numBalls = 8;
+    public float angleIncrement;
 
     // time tracker
     private float spriteTime;
@@ -38,10 +51,10 @@ public class SkySprite : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    //private Transform player;
+    private CircleCollider2D spriteCollider;
 
     // static vars
-    public static float health = 100;
+    public static float health;
 
     // vorax damage
     public float shotDamage = 10;
@@ -54,11 +67,17 @@ public class SkySprite : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        //transform = GetComponent<Transform>();
+        spriteCollider = GetComponent<CircleCollider2D>();
 
         // get current time
         spriteTime = Time.time;
         abilityTime = Time.time;
+
+        // initialize health
+        health = 100;
+
+        // initialize angle increment for shooting
+        angleIncrement = 360f / numBalls;
     }
 
     // frame update
@@ -94,6 +113,7 @@ public class SkySprite : MonoBehaviour
         Move();
     }
 
+    // manoeuver around map management
     private void Move()
     {
         // horizontal input axis
@@ -122,14 +142,14 @@ public class SkySprite : MonoBehaviour
         }
     }
 
+    // sprite use their ability
     private void UseAbility()
     {
         // fire ability - shoot
         if (spriteState == 0 && ((Time.time - abilityTime) > ballDelay))
         {
             // shoot
-            // instantiate ball
-            GameObject ball = Instantiate(ballPrefab, transform.position, transform.rotation);
+            Shoot();
 
             // ability time cooldown
             abilityTime = Time.time;
@@ -149,6 +169,32 @@ public class SkySprite : MonoBehaviour
         
     }
 
+    // fire sprite shoot fireballs in a circle around sprite
+    private void Shoot()
+    {
+        // initial angle 0
+        float currentAngle = 0;
+
+        // loop through however many balls needed
+        for (int i = 0; i < numBalls; i++)
+        {
+            // instantiate ball at player position
+            GameObject ball = Instantiate(ballPrefab, transform.position, Quaternion.identity);
+
+            // calculate ball velocity components
+            float xVel = ballSpeed * Mathf.Cos(Mathf.Deg2Rad * currentAngle);
+            float yVel = ballSpeed * Mathf.Sin(Mathf.Deg2Rad * currentAngle);
+
+            // set initial velocity and rotation of ball
+            ball.GetComponent<Rigidbody2D>().velocity = new Vector2(xVel, yVel);
+            ball.transform.rotation = Quaternion.AngleAxis(currentAngle, Vector3.forward);
+
+            // update angle
+            currentAngle += angleIncrement;
+        }
+    }
+
+    // sprite state management
     private void ChangeSprite()
     {
         // change the sprite state
@@ -164,23 +210,36 @@ public class SkySprite : MonoBehaviour
         // if it's fire sprite
         if (spriteState == 0)
         {
+            // change the sprite and animation
             spriteRenderer.sprite = fireSprite;
             animator.runtimeAnimatorController = fireAnimate;
+            // adjust the collider
+            spriteCollider.radius = fireRadius;
+            spriteCollider.offset = fireOffset;
         }
         // if it's air sprite
         else if (spriteState == 1)
         {
+            // change the sprite and animation
             spriteRenderer.sprite = airSprite;
             animator.runtimeAnimatorController = airAnimate;
+            // adjust the collider
+            spriteCollider.radius = airRadius;
+            spriteCollider.offset = airOffset;
         }
         // if it's water sprite
         else if (spriteState == 2)
         {
+            // change the sprite and animation
             spriteRenderer.sprite = waterSprite;
             animator.runtimeAnimatorController = waterAnimate;
+            // adjust the collider
+            spriteCollider.radius = waterRadius;
+            spriteCollider.offset = waterOffset;
         }
     }
 
+    // collision management
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // if it collides with a vorax shot, deduct health
@@ -197,7 +256,7 @@ public class SkySprite : MonoBehaviour
             UI.ChangeHealth(voraxDamage);
         }
 
-        // if it collides with a crystal, play sfx
+        // if it collides with a crystal, play sfx, increase score
         else if (collision.collider.name.Contains("Crystal"))
         {
             UI.IncreaseScore();

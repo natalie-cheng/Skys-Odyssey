@@ -20,23 +20,25 @@ public class Fireball : MonoBehaviour
     private void Start()
     {
         // get the position and direction of the mouse
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        // mouseDir = (mousePos - transform.position).normalize;
-        mouseDir = (mousePos - transform.position);
-        mouseDir = Vector3.Normalize(mouseDir);
-        //Debug.Log(mouseDir);
-        // initialize ball rigidbody
-        rb = GetComponent<Rigidbody2D>();
+        //mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //// mouseDir = (mousePos - transform.position).normalize;
+        //mouseDir = (mousePos - transform.position);
+        //mouseDir = Vector3.Normalize(mouseDir);
+        ////Debug.Log(mouseDir);
+        //// initialize ball rigidbody
+        //rb = GetComponent<Rigidbody2D>();
 
-        // set the velocity in the direction of the mouse
-        // velocity is constant throughout ball life
-        rb.velocity = mouseDir * ballSpeed;
+        //// set the velocity in the direction of the mouse
+        //// velocity is constant throughout ball life
+        ////rb.velocity = mouseDir * ballSpeed;
+        //rb.velocity = new Vector3(1, 0, 0);
+        //rb.velocity *= ballSpeed;
 
-        // calculate the angle to the mousepos
-        float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
+        //// calculate the angle to the mousepos
+        //float angle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg;
 
-        // rotate the fireball by angle to face the mousepos
-        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        //// rotate the fireball by angle to face the mousepos
+        //transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         // set currentTime
         currentTime = Time.time;
