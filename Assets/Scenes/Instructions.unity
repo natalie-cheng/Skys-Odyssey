@@ -1212,10 +1212,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Use arrows or wasd to move
+  m_text: '1. Use arrows or wasd keys to move
 
-    2. Press tab to toggle between elemental
-    states
+    2. Press tab to toggle between
+    elemental states
 
     3. Press space to use an ability
 

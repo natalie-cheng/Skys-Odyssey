@@ -125,10 +125,7 @@ public class SkySprite : MonoBehaviour
         // horizontal input axis
         float horizontal = Input.GetAxis("Horizontal");
 
-        // allow double jumps only if it's the air sprite
-            // infinite double jumps?
-        // other sprites are only allowed single jumps
-        //if (Input.GetButton("Vertical") && Mathf.Abs(rb.velocity.y) < velThreshhold && (spriteState == 2 || Mathf.Abs(rb.velocity.y) < 0.01f))
+        // allow double jumps/flying only if it's the air sprite
         if (Input.GetButton("Vertical") && (spriteState == 1 || Mathf.Abs(rb.velocity.y) < velThreshhold))
         {
             rb.velocity = new Vector2(horizontal * speed, speed);

@@ -89,30 +89,15 @@ public class UI : MonoBehaviour
         // if skysprites health drops below 0, loss
         if (SkySprite.health <= 0)
         {
-            //SetGameOverInternal(false);
+            SetGameLossInternal();
         }
-    }
-
-    // game over static 
-    public static void SetGameOver(bool win)
-    {
-        Singleton.SetGameOverInternal(win);
     }
 
     // gameover internal ui
-    private void SetGameOverInternal(bool win)
+    private void SetGameLossInternal()
     {
-        if (win)
-        {
-            
-        }
-
-        else
-        {
-            Time.timeScale = 0;
-            lossScreen.SetActive(true);
-
-        }
+        Time.timeScale = 0;
+        lossScreen.SetActive(true);
     }
 
     // pause button/ui
