@@ -2,6 +2,8 @@ Walls Sprite:
 https://ipixl.itch.io/pixel-art-112-platformer-grass-tiles
 Crystal Sprite:
 https://lunarnia.itch.io/pixel-purple-gem
+Sky Sprite:
+https://www.gamedevmarket.net/asset/animated-pixel-elematal-wisp
 Dirt Walls:
 https://www.deviantart.com/zdogwatch/art/Dirt-Tileset-751076031
 Water Shield:
@@ -14,3 +16,7 @@ UI Buttons:
 https://www.freepik.com/premium-vector/start-play-pause-button-doodle-sketch-style-question-exclamation-arrow-mark-symbol_34160493.htm
 Font:
 https://www.1001fonts.com/wonder-night-font.html
+Score sfx:
+https://mixkit.co/free-sound-effects/win/
+Lose Health sfx:
+https://mixkit.co/free-sound-effects/lose/

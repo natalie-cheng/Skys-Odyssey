@@ -5,7 +5,7 @@ using UnityEngine;
 public class SkySprite : MonoBehaviour
 {
     // sprite speed
-    public float speed = 3;
+    public float speed = 4;
     // threshhold for double jumping
     public float velThreshhold = 0.01f;
 
@@ -38,7 +38,7 @@ public class SkySprite : MonoBehaviour
 
     // fireball
     public GameObject ballPrefab;
-    private float ballDelay = 0.25f;
+    public float ballDelay = 0.4f;
     public float ballSpeed = 5;
     public float numBalls = 8;
     public float angleIncrement;
@@ -52,6 +52,11 @@ public class SkySprite : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private CircleCollider2D spriteCollider;
+
+    // sprite audio
+    private AudioSource sfx;
+    public AudioClip scoreSfx;
+    public AudioClip dmgSfx;
 
     // static vars
     public static float health;
@@ -68,6 +73,7 @@ public class SkySprite : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         spriteCollider = GetComponent<CircleCollider2D>();
+        sfx = GetComponent<AudioSource>();
 
         // get current time
         spriteTime = Time.time;
@@ -247,6 +253,7 @@ public class SkySprite : MonoBehaviour
         {
             health -= shotDamage;
             UI.ChangeHealth(shotDamage);
+            sfx.PlayOneShot(dmgSfx, 1);
         }
 
         // if it collides with a vorax, deduct health
@@ -254,12 +261,14 @@ public class SkySprite : MonoBehaviour
         {
             health -= voraxDamage;
             UI.ChangeHealth(voraxDamage);
+            sfx.PlayOneShot(dmgSfx, 1);
         }
 
         // if it collides with a crystal, play sfx, increase score
         else if (collision.collider.name.Contains("Crystal"))
         {
             UI.IncreaseScore();
+            sfx.PlayOneShot(scoreSfx, 0.85f);
         }
     }
 }

@@ -13,12 +13,16 @@ public class UI : MonoBehaviour
     public Image healthBar;
     public GameObject lossScreen;
     public GameObject pauseScreen;
+    public GameObject helpScreen;
 
     // track the number of existing crystals
     public static float numCrystals;
 
     // track score
     public static float score;
+
+    // game management
+    public static bool collected;
 
     // call start
     private void Start()
@@ -36,6 +40,10 @@ public class UI : MonoBehaviour
         // disable ui screens
         lossScreen.SetActive(false);
         pauseScreen.SetActive(false);
+        helpScreen.SetActive(false);
+
+        // game management
+        collected = false;
     }
 
     // frame update
@@ -45,6 +53,11 @@ public class UI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+        }
+        // check if all the crystals are collected
+        if (numCrystals == score)
+        {
+            collected = true;
         }
     }
 
@@ -76,7 +89,7 @@ public class UI : MonoBehaviour
         // if skysprites health drops below 0, loss
         if (SkySprite.health <= 0)
         {
-            SetGameOverInternal(false);
+            //SetGameOverInternal(false);
         }
     }
 
@@ -109,9 +122,17 @@ public class UI : MonoBehaviour
         pauseScreen.SetActive(true);
     }
 
+    // instructions/help button/ui
+    public void Help()
+    {
+        Time.timeScale = 0;
+        helpScreen.SetActive(true);
+    }
+
     // resume button
     public void Resume()
     {
+        helpScreen.SetActive(false);
         pauseScreen.SetActive(false);
         Time.timeScale = 1;
     }
@@ -127,6 +148,6 @@ public class UI : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Menu : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
-    // UI objects
+    // UI object
     public static UI Singleton;
 
     // start button
@@ -15,15 +15,16 @@ public class Menu : MonoBehaviour
     }
 
     // instructions button
-    //public void Instructions()
-    //{
-    //    SceneManager.LoadScene("Instructions");
-    //}
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
+    }
 
-    //public void Menu()
-    //{
-    //    SceneManager.LoadScene("Menu");
-    //}
+    // menu button
+    public void Menu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 
     // quit button
     public void Quit()

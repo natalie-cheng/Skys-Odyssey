@@ -12,7 +12,6 @@ public class Crystal : MonoBehaviour
             // increase score
             //UI.IncreaseScore();
             // destroy crystal
-            Debug.Log("crystal hit skysprite");
             Destroy(gameObject);
         }
     }

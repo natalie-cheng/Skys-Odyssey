@@ -81,7 +81,6 @@ public class Vorax : MonoBehaviour
         // if it collides with fireball
         if (collision.collider.name.Contains("Fireball"))
         {
-            Debug.Log("Vorax loses health");
             health--;
             opacity -= 0.15f;
             spriteRenderer.color = new Color(voraxColor.x, voraxColor.y, voraxColor.z, opacity);

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7540217731299042082}
   - component: {fileID: 9004420277231491362}
   - component: {fileID: 7855145977689012955}
+  - component: {fileID: -6285813646631381334}
   m_Layer: 6
   m_Name: SkySprite
   m_TagString: Untagged
@@ -121,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bc4baee5c93b478b8f804332c7dae32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 4
   velThreshhold: 0.01
   fireSprite: {fileID: -174947428, guid: 7570139d3dd924778ad4910cc1f30baf, type: 3}
   fireAnimate: {fileID: 9100000, guid: e34434c6ae49545cda522cceb1db050c, type: 2}
@@ -131,9 +132,12 @@ MonoBehaviour:
   airAnimate: {fileID: 9100000, guid: f1098bcf3b68346a3903617507927194, type: 2}
   shieldPrefab: {fileID: 1041679433605112221, guid: 397e4b07e11b6415e99aac68a112578c, type: 3}
   ballPrefab: {fileID: 6843791958640861875, guid: 532efdf1e9af348df8d62e524d6a7242, type: 3}
+  ballDelay: 0.4
   ballSpeed: 5
   numBalls: 8
   angleIncrement: 0
+  scoreSfx: {fileID: 8300000, guid: 60d47b6b3eccd431e8b94043a62d680c, type: 3}
+  dmgSfx: {fileID: 8300000, guid: fe77ad3c0b2754d92bb7f0bb88cb58ac, type: 3}
   shotDamage: 10
   voraxDamage: 20
 --- !u!50 &9004420277231491362
@@ -178,14 +182,14 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1919
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -198,3 +202,99 @@ CircleCollider2D:
   m_Offset: {x: -0.01, y: -0.03}
   serializedVersion: 2
   m_Radius: 0.14
+--- !u!82 &-6285813646631381334
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5352409288115015417}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 60d47b6b3eccd431e8b94043a62d680c, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
