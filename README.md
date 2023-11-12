@@ -1,5 +1,5 @@
 # Skys-Odyssey
-Last Updated: Nov 10, 2023
+Last Updated: Nov 11, 2023
 ## Help!
 Sky, the elemental sprite, stumbled through the wrong portal and can't get home! Collect all the crystals to reactivate the portal and get her home safely. But beware - the evil vorax are attracted to the crystals and will do anything to stop you from taking them. Toggle between Sky's different elemental states and abilties to avoid and defeat the vorax!
 
@@ -9,7 +9,7 @@ I really enjoyed the design focus of this game, and building a story and motive 
 
 Sky's story is resolved at the end of the game, but maybe I'll add to her adventures in the future.
 ## Design
-This assignment involved more planning and design work than previous ones. I created aesthetic goals and core loops before programming, and tried to build a narrative surrounding the game. More design details can be found in the devlog.
+This assignment involved more planning and design work than previous ones. I created aesthetic goals and core loops before programming, and tried to build a narrative surrounding the game. More design details can be found in the DEVLOG.txt file.
 ### Aesthetic Goals
 * The player experiences a sense of achievement when they have collected all the crystals and are able to return home.
     * Success: The player feels satisfied with collecting crystals and the journey conclusion.
