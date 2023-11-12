@@ -1,5 +1,5 @@
 # Skys-Odyssey
-Last Updated: Nov 11, 2023
+**Last Updated: Nov 12, 2023**
 ## Help!
 Sky, the elemental sprite, stumbled through the wrong portal and can't get home! Collect all the crystals to reactivate the portal and get her home safely. But beware - the evil vorax are attracted to the crystals and will do anything to stop you from taking them. Toggle between Sky's different elemental states and abilties to avoid and defeat the vorax!
 
@@ -8,8 +8,10 @@ Sky's Odyssey is a 2D Platform game I created as an assignment for my COMP_SCI 3
 I really enjoyed the design focus of this game, and building a story and motive around the player and characters. I did find that I had to put in more work in balancing the difficulty of the game, which was more intricate than I expected. I especially enjoyed learning how to create the short cutscene at the end, as I thought it was really fun.
 
 Sky's story is resolved at the end of the game, but maybe I'll add to her adventures in the future.
+
 ## Design
-This assignment involved more planning and design work than previous ones. I created aesthetic goals and core loops before programming, and tried to build a narrative surrounding the game. More design details can be found in the DEVLOG.txt file.
+This assignment involved more planning and design work than previous ones. I created aesthetic goals and core loops before programming, and tried to build a narrative surrounding the game. More design details can be found in the DEVLOG.pdf file.
+
 ### Aesthetic Goals
 * The player experiences a sense of achievement when they have collected all the crystals and are able to return home.
     * Success: The player feels satisfied with collecting crystals and the journey conclusion.
@@ -24,10 +26,8 @@ This assignment involved more planning and design work than previous ones. I cre
 3. Switch elemental state to fire. Shoot fireballs to defeat vorax.
 4. Find crystal. Go collect crystal.
 
-This core loop serves aethetic goals how?
-
 ## Gameplay
-This game is intended to be played with a keyboard. There are additional instructions in the INSTRUCTIONS.txt file.
+This game is intended to be played with a keyboard. There are additional instructions in the INSTRUCTIONS.pdf file.
 * Use the arrows or WASD keys to move.
 * Press TAB to toggle between elemental states.
 * Press SPACE to use an ability. Each element has a different ability.
@@ -42,13 +42,33 @@ This game is intended to be played with a keyboard. There are additional instruc
 ## Build
 A build for this game is available under releases.
 
-Download and unzip the file, run app.
+Download and unzip the "Sky's Odyssey" file. Open the application to run the game.
 
 Alternatively, you can open the project in the Unity Editor. It uses Unity 2022.3.10f1.
 
-Open the "MainMenu" scene to start the game.
+Open and run the "MainMenu" scene to start the game.
 
 ## Images
+![Menu](External/Menu.png)   
+*Main Menu*
+
+![Instructions1](External/Instructions1.png)
+![Instructions2](External/Instructions2.png)   
+*Instructions*
+
+![Gameplay1](External/Gameplay1.png)
+![Gameplay2](External/Gameplay2.png)   
+*Gameplay*
+
+![EndCutscene](External/EndCutscene.png)
+![EndScene](External/EndScene.png)   
+*Ending Cutscene*
+
+![LossScreen](External/LossScreen.png)   
+*Loss Screen*
+
+![Map](External/Map.png)   
+*Map*
 
 ## Credits
 Walls Sprite: https://ipixl.itch.io/pixel-art-112-platformer-grass-tiles   
