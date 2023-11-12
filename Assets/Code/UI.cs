@@ -85,7 +85,7 @@ public class UI : MonoBehaviour
     private void ChangeHealthInternal(float damage)
     {
         // change health bar fill
-        healthBar.fillAmount -= (float) damage / 100;
+        healthBar.fillAmount -= (float) damage / SkySprite.maxHealth;
         // if skysprites health drops below 0, loss
         if (SkySprite.health <= 0)
         {

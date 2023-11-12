@@ -712,6 +712,7 @@ GameObject:
   - component: {fileID: 1286818377}
   - component: {fileID: 1286818376}
   - component: {fileID: 1286818380}
+  - component: {fileID: 1286818381}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -819,6 +820,102 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textContent: {fileID: 1828064245}
   buttonText: {fileID: 1067607387}
+--- !u!82 &1286818381
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286818375}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ae785306c7f974a4a903eb75a8a5d4d0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1373396515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,24 +1309,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '1. Use arrows or wasd keys to move
-
-    2. Press tab to toggle between
-    elemental states
-
-    3. Press space to use an ability
-
-    Water Ability: Shield
-
-    Air
-    ability: Fly/Double jump
-
-    Fire Ability: Shoot circle of fireballs
+  m_text: 'Sky, the elemental sprite, is lost and can''t get home! Collect all 25
+    crystals to reactivate the portal and take her home. Sky has three different
+    elemental states: fire, air, and water. Each state has a unique ability.
 
 
-    Watch
-    your health! Being hit by a vorax bullet or colliding with a vorax will cause
-    damage'
+    Beware,
+    the evil vorax are attracted to the crystals'' power, and will do anything to
+    stop Sky from collecting them! Toggle between Sky''s different elemental abilties
+    to avoid and defeat the vorax and collect the crystals!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2c36c4d78dd0d46339545e3eee7a1142, type: 2}
   m_sharedMaterial: {fileID: -7714818575980689411, guid: 2c36c4d78dd0d46339545e3eee7a1142, type: 2}

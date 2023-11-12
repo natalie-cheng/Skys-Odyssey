@@ -202,4 +202,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSpeed: 8
-  lifespan: 1
+  lifespan: 1.2

@@ -28,7 +28,7 @@ public class SkySprite : MonoBehaviour
     private Vector2 airOffset = new Vector2(0, -0.03f);
 
     // how often player can switch sprites
-    private float spriteDelay = 0.3f;
+    private float spriteDelay = 0.5f;
     // 0 is fire, 1 is air, 2 is water
     private float spriteState = 0;
 
@@ -60,6 +60,7 @@ public class SkySprite : MonoBehaviour
 
     // static vars
     public static float health;
+    public static float maxHealth;
 
     // vorax damage
     public float shotDamage = 10;
@@ -80,7 +81,8 @@ public class SkySprite : MonoBehaviour
         abilityTime = Time.time;
 
         // initialize health
-        health = 100;
+        health = 150;
+        maxHealth = health;
 
         // initialize angle increment for shooting
         angleIncrement = 360f / numBalls;
